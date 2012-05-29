@@ -12,18 +12,18 @@ public class Main {
         JChannel channel =  new JChannel("channel-udp.xml");
         channel.connect(controlClusterName);
 
-        List<StreamSink> sinks = new ArrayList<StreamSink>();
-        sinks.add(new LocalStreamSink("127.0.0.1",
+        List<IStreamSink> sinks = new ArrayList<IStreamSink>();
+        sinks.add(new LocalSink("127.0.0.1",
                 Integer.parseInt(System.getProperty("radioListenPort"))));
 
         if(channel.getView().getMembers().size() == 1){
-            sinks.add(new BroadcastStreamSink(dataClusterName));
+            sinks.add(new BroadcastSink(dataClusterName));
         }
 
         //Create sources
         String url = "http://205.188.215.229:8028";
-        StreamSource source = !(channel.getView().getMembers().size() > 1) ?
-                new InternetStreamSource(new URL(url), sinks):
-                new BroadcastStreamSource(dataClusterName, sinks);
+        IStreamSource source = !(channel.getView().getMembers().size() > 1) ?
+                new InternetSource(new URL(url), sinks):
+                new BroadcastSource(dataClusterName, sinks);
     }
 }
