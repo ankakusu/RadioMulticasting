@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="mp3player">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/mp3player.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/mp3player.jar!/" />
+    </SOURCES>
+  </library>
+</component>
