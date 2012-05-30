@@ -4,9 +4,4 @@ public interface IStreamSource {
     final int BUFFER_SIZE = 8192;
     byte[] read() throws Exception;
 
-    public static enum Type {
-        BROADCAST_SOURCE,
-        INTERNET_SOURCE,
-        NULL
-    }
 }

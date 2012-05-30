@@ -83,6 +83,8 @@ public class BroadcastSink extends ReceiverAdapter implements IStreamSink,IStati
 
     @Override
     public Statistics getStatistics() throws Exception {
+//        System.out.println("<Broadcast sink> Sent Bytes " + channel.getSentBytes() +
+//                "\n<Broadcast sink> Received Bytes "+ channel.getReceivedBytes());
         return new Statistics(channel.getSentBytes(),channel.getReceivedBytes());
     }
 }

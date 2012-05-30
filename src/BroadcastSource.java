@@ -15,10 +15,9 @@ public final class BroadcastSource extends ReceiverAdapter implements IStreamSou
     private List<IStreamSink> sinks;
     private BlockingQueue<byte[]> buffers = new LinkedBlockingQueue<byte[]>();
     private List<String> headers;
-    private Type type;
+
 
     public BroadcastSource(String groupName, List<IStreamSink> sinks) throws Exception {
-        type = Type.BROADCAST_SOURCE;
         // Create data channel
         channel = new JChannel("channel-udp.xml");
         channel.connect(groupName);
@@ -59,8 +58,9 @@ public final class BroadcastSource extends ReceiverAdapter implements IStreamSou
     }
 
     private void receive(DataMessage dm) {
-        if (isInitialized())
+        if (isInitialized()) {
             buffers.add(dm.getData());
+        }
     }
 
     public boolean isInitialized() {
@@ -83,6 +83,8 @@ public final class BroadcastSource extends ReceiverAdapter implements IStreamSou
 
     @Override
     public Statistics getStatistics() throws Exception {
+//        System.out.println("<Broadcast source> Sent Bytes " + channel.getSentBytes() +
+//        "\n<Broadcast source> Received Bytes "+ channel.getReceivedBytes());
         return new Statistics(channel.getSentBytes(), channel.getReceivedBytes());
     }
     

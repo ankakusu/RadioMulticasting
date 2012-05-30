@@ -4,14 +4,13 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InternetSource implements IStreamSource {
+public class InternetSource implements IStreamSource, IStatistics {
     private BufferedInputStream bufferedStream;
     private List<String> headers;
     private List<IStreamSink> sinks;
-    private Type type;
+    private long readBytes;
 
     public InternetSource(URL url, List<IStreamSink> sinks) throws IOException {
-        type = Type.INTERNET_SOURCE;
         // Connect
         URLConnection conn = url.openConnection();
         InputStream stream = conn.getInputStream();
@@ -40,12 +39,19 @@ public class InternetSource implements IStreamSource {
     }
 
     @Override
+    public Statistics getStatistics() throws Exception {
+        // TODO: Add a reasonable Statistics class
+        return new Statistics(0,0);
+    }
+
+    @Override
     public byte[] read() throws IOException {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         byte[] buffer = new byte[BUFFER_SIZE];
         int nRead = 0;
 
         if ((nRead = bufferedStream.read(buffer)) > 0) {
+            readBytes = readBytes + nRead;
             baos.write(buffer, 0, nRead);
         } else {
 
@@ -91,5 +97,6 @@ public class InternetSource implements IStreamSource {
     void display() {
         System.out.println();
     }
-    
+
+
 }

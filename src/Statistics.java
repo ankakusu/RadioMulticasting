@@ -1,10 +1,10 @@
 
-public class Statistics { //TODO: Will implement IStatistics? why? why not?
+public class Statistics {
     private final long receivedBytes;
-    private final long sendBytes;
+    private final long sentBytes;
 
-    public Statistics(long sendBytes, long receivedBytes) {
-        this.sendBytes = sendBytes;
+    public Statistics(long sentBytes, long receivedBytes) {
+        this.sentBytes = sentBytes;
         this.receivedBytes = receivedBytes;
     }
 
@@ -12,7 +12,7 @@ public class Statistics { //TODO: Will implement IStatistics? why? why not?
         return receivedBytes;
     }
 
-    public long getSendBytes(){
-        return sendBytes;
+    public long getSentBytes(){
+        return sentBytes;
     }
 }

@@ -7,18 +7,25 @@ import java.net.Socket;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class LocalSink implements IStreamSink {
+public class LocalSink implements IStreamSink,IStatistics {
     private final AtomicBoolean initialized = new AtomicBoolean(false);
     Socket socket;
     OutputStream outputStream;
     ServerSocket serverSocket;
     List<String> headers;
     Map<Socket,OutputStream> clients = new HashMap<Socket, OutputStream>();
+    private long sentBytes;
     
     public LocalSink(String url, int port) throws IOException {
         serverSocket = new ServerSocket(
                 port, 32, InetAddress.getByName(url));
         serverThread.start();
+    }
+
+    @Override
+    public Statistics getStatistics() throws Exception {
+        // TODO: Add a reasonable Statistics class
+        return new Statistics(0,0);
     }
     
     @Override
@@ -26,6 +33,7 @@ public class LocalSink implements IStreamSink {
         if( socket != null){
             try {
                 //display(b.length);
+                sentBytes = sentBytes + b.length;
                 for (Socket socket : clients.keySet())
                     clients.get(socket).write(b);// outputStream.write(b);
             } catch (IOException e) {
@@ -95,4 +103,6 @@ public class LocalSink implements IStreamSink {
     public boolean isInitialized() {
         return initialized.get();
     }
+
+
 }
