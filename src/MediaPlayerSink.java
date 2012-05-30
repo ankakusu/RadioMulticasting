@@ -5,7 +5,7 @@ import java.io.PipedOutputStream;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class MediaPlayerSink implements IStreamSink{
+public class MediaPlayerSink implements IStreamSink,IStatistics{
     private final AtomicBoolean initialized = new AtomicBoolean(false);
     private List<String> headers;
     PipedInputStream pis;
@@ -14,12 +14,9 @@ public class MediaPlayerSink implements IStreamSink{
     MediaPlayerSink(MP3Player mp3Player) throws Exception {
         pis = new PipedInputStream();
         pos = new PipedOutputStream(pis);
-        mp3Player = new MP3Player(pis);
-    }
-    
-    private Thread mediaPlayerThread = new Thread(){
+        //TODO: Add pis to InputStream of MP2Player
 
-    };
+    }
 
     @Override
     public void write(byte[] b) throws Exception {
@@ -35,5 +32,10 @@ public class MediaPlayerSink implements IStreamSink{
     @Override
     public boolean isInitialized() {
         return initialized.get();
+    }
+
+    @Override
+    public Statistics getStatistics() throws Exception {
+        return new Statistics(0,0);
     }
 }

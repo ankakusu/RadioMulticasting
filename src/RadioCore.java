@@ -25,6 +25,12 @@ public class RadioCore extends Thread implements IStatistics{
             sinks.add(localSink);
             observables.add(localSink);
 
+            // TODO: Add mp3player integration
+            // TODO: Add setInputStream(InputStream is) function to MP3Player class
+            //MP3Player mp3Player;
+            //sinks.add(new MediaPlayerSink(mp3Player));
+            //add new observable
+
             if(channel.getView().getMembers().size() == 1){
                 BroadcastSink broadcastSink = new BroadcastSink(dataClusterName);
                 sinks.add(broadcastSink);
