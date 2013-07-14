@@ -121,7 +121,8 @@ Manual
 This project is written in Java programming language. Project is developed and tested with JDK 1.7u3. 
 You can download all dependencies from OzuRadyoSourceCode folder. This page also includes Java Documentations.
 
-### Libraries required to build this code is given below:
+Libraries required to build this code is given below:
+-----------------------------------------------------
 
 * Jgroups (v.3.0.9) : communications and multicasting
 * Jmf(Java Media Framework): playing media
@@ -134,13 +135,15 @@ You can download all dependencies from OzuRadyoSourceCode folder. This page also
 * customizer.jar
 * appframework-1.0.3.jar
 
-### Projects are tested on the platforms below:
+Projects are tested on the platforms below:
+-------------------------------------------
 
 * Windows 7 with Oracle JRE
 * Ubuntu with Oracle JRE
 * CentOS with OpenJDK JRE
 
-### How to run the code:
+How to run the code:
+-----------------------------------------------------
 
 1. Download the executable file(jar file) from the OzuRadyoExecutable folder in the repository.
 2. Double click on the jar file, press play button.
