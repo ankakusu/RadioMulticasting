@@ -1,0 +1,246 @@
+
+
+-------------------------------------------------------------------
+GMS: address=yaprak-53349, cluster=RadioOzuControl, physical address=10.100.4.228:46895
+-------------------------------------------------------------------
+** ControlChannel View: [ozunacaoe-47864|1] [ozunacaoe-47864, yaprak-53349]
+### class edu.ozyegin.ozuradyo.core.LocalSink Waiting for incoming connections...
+
+-------------------------------------------------------------------
+GMS: address=yaprak-27288, cluster=RadioOzu, physical address=10.100.4.228:46895
+-------------------------------------------------------------------
+**DataChannel View [ozunacaoe-10693|1] [ozunacaoe-10693, yaprak-27288]
+down: 27766 , up: 268
+
+down: 0 , up: 0
+
+down: 8495 , up: 0
+
+down: 8495 , up: 0
+
+down: 8495 , up: 0
+
+down: 16990 , up: 0
+
+down: 8495 , up: 0
+
+AudioInputStream created.
+Getting decode format...
+down: 8495 , up: 0
+
+playing now...
+down: 0 , up: 0
+
+down: 8495 , up: 0
+
+down: 8495 , up: 0
+
+down: 8495 , up: 0
+
+down: 8495 , up: 0
+
+down: 8495 , up: 0
+
+down: 8495 , up: 0
+
+down: 8495 , up: 0
+
+down: 8495 , up: 0
+
+down: 8495 , up: 0
+
+down: 8495 , up: 0
+
+down: 8495 , up: 0
+
+down: 0 , up: 0
+
+down: 0 , up: 0
+
+** ControlChannel View: [yaprak-53349|2] [yaprak-53349]
+I'm the new master.1338813666132
+down: 0 , up: 0
+
+down: 0 , up: 0
+
+down: 0 , up: 0
+
+source.flush1338813667642
+sinks.clear1338813667642
+observables.clear1338813667642
+LocalSink is re-added
+down: 0 , up: 0
+
+
+-------------------------------------------------------------------
+GMS: address=yaprak-39486, cluster=RadioOzu, physical address=10.100.4.228:46895
+-------------------------------------------------------------------
+down: -180676 , up: -268
+
+down: 0 , up: 0
+
+down: 0 , up: 0
+
+down: 0 , up: 0
+
+** DataChannel View [yaprak-39486|0] [yaprak-39486]
+BroadcastSink is re-added
+MediaPlayer is re-added
+down: 0 , up: 0
+
+New InternetSource is created.
+down: 0 , up: 0
+
+down: 18016 , up: 18016
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+** ControlChannel View: [yaprak-53349|3] [yaprak-53349, ozunacaoe-58188]
+** DataChannel View [yaprak-39486|1] [yaprak-39486, ozunacaoe-51128]
+down: 8495 , up: 8495
+
+Received message type JOIN
+down: 8495 , up: 8495
+
+down: 8763 , up: 16739
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 0 , up: 0
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
+down: 8495 , up: 8495
+
