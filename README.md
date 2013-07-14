@@ -32,7 +32,7 @@ and this audio stream is forwarded to local host so that a media player such as 
 play this audio stream. This part of the project is similar to the 5th assignment (proxy server) of CS547 class. 
 Thus, codes of the proxy server are used at this part of the project. The messaging sequential is described below:
 
-<img src="Tozu-radio-data-flow.png" alt="Radio stream flow">
+![Radio stream flow](ozu-radio-data-flow.png)
 
 #### RadyoOzu - Data and Control Links
 
