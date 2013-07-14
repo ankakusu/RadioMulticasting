@@ -32,7 +32,7 @@ and this audio stream is forwarded to local host so that a media player such as 
 play this audio stream. This part of the project is similar to the 5th assignment (proxy server) of CS547 class. 
 Thus, codes of the proxy server are used at this part of the project. The messaging sequential is described below:
 
-![Radio stream flow](ozu-radio-data-flow.png)
+<img src="Tozu-radio-data-flow.png" alt="Radio stream flow">
 
 #### RadyoOzu - Data and Control Links
 
@@ -99,7 +99,7 @@ and running a gossip router.
 
 In this solution, a gossip router can be created on host B(outside the firewall) from a socket that firewall allows 
 access. Host A will escape from firewall through Host B and successfully connect to Host C.
-
+ 
 #### IP Multicasting
 
 In RadyoOzu project, the multicasting is handled in the router level. As a starting point, this project is developed 
